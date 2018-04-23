@@ -32,6 +32,7 @@
                 listTitle: '',
                 currentPage: 1,
                 count: 18,
+                maxPage: 14,
                 total: 0,
             }
         },
@@ -39,9 +40,9 @@
             this.getMovieList();
         },
         computed:{
-            maxPage() {
-                return Math.ceil(this.total / this.count);
-            }
+            // maxPage() {
+            //     return Math.ceil(this.total / this.count);
+            // }
         },
         methods: {
             //获取电影top250列表

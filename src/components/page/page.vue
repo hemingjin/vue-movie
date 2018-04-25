@@ -28,7 +28,6 @@
         data() {
             return{
                 currentPage: this.current,
-                maxPage: this.max,
                 jumpPage: 1
             }
         },
@@ -56,7 +55,7 @@
         computed: {
             // 将要显示的页码用计算属性的方式显示出来
             pages() {
-                let maxPage = this.maxPage,
+                let maxPage = this.max,
                     currentPage = this.currentPage,
                     arr = [];
                 //总页码小于等于5， 全部显示出来
